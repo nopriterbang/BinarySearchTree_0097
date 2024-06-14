@@ -81,6 +81,11 @@ public:
 			cout << "Tree is empty" << endl;
 			return;
 		}
+		if (ptr != NULL) {
+			inorder(ptr->leftchild); // left
+			cout << ptr->info << " "; // root
+			inorder(ptr->rightchild); // right
+		}
 	
 	}
 
