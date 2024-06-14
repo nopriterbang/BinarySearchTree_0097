@@ -82,11 +82,16 @@ public:
 			return;
 		}
 		if (ptr != NULL) {
-			inorder(ptr->leftchild); // left
-			cout << ptr->info << " "; // root
-			inorder(ptr->rightchild); // right
+			inorder(ptr->leftchild); 
+			cout << ptr->info << " ";
+			inorder(ptr->rightchild); 
 		}
 	
+	}
+
+	void preorder(Node* ptr)
+	{
+
 	}
 
 
